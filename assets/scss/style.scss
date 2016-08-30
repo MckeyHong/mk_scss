@@ -1,0 +1,214 @@
+﻿$h1-color: #4A66FD;
+$navbar-color: #FFFFFF;
+$navbar-backgound-color: #424242;
+$font-stack: 'Open Sans', sans-serif;
+
+@mixin h-font () {
+    font-family: $font-stack;
+}
+
+/**
+ * GENERAL STYLES
+ */
+body {
+    font-family: $font-stack;
+    font-size: 14px;
+    background-image: url(../img/sativa.png);
+}
+
+h1 {
+    @include h-font();
+    line-height: 50px;
+    font-weight: 900;
+    font-size: 30px;
+    text-transform: uppercase;
+    text-align: center;
+    color: $h1-color;
+}
+
+h1::after {
+    display: block;
+    content: "";
+    height: 2px;
+    width: 150px;
+    background: $h1-color;
+    margin: 5px auto 40px;
+}
+
+.text-center {
+    text-align: center;
+}
+
+h2 {
+    @include h-font();
+    line-height: 50px;
+    color: #424242;
+}
+
+h3 {
+    @include h-font();
+    line-height: 30px;
+    padding-bottom: 20px;
+}
+
+h4 {
+    @include h-font();
+    padding-top: 25px;
+    line-height: 40px;
+    padding-bottom: 0px;
+    font-size: 22px;
+    font-weight: 900;
+}
+
+.adjst {
+     padding-top: 0px;
+}
+
+p {
+    font-weight: 300;
+    line-height: 30px;
+    padding-bottom: 15px;
+}
+
+.top-pad {
+    padding-top: 55px;
+}
+
+.f-s {
+    font-size: 20px;
+}
+
+.g-pad-bottom {
+    padding-bottom: 40px;
+}
+
+.form-control {
+    background-color: rgba(255, 255, 255, 0);
+}
+
+/**
+ * NAVBAR CHANGES
+ */
+.navbar {
+    font-size: 16px;
+}
+
+.navbar-inverse {
+    background: #424242;
+    min-height: 60px;
+    padding-top: 5px;
+    border-color: $navbar-backgound-color;
+
+    .navbar-nav {
+        .active a {
+            background: $navbar-color;
+        }
+
+        li a {
+            color: $navbar-color;
+        }
+    }
+
+    .navbar-brand {
+        color: $navbar-color;
+        font-weight: bolder;
+        font-size: 25px;
+        font-weight: 900;
+        letter-spacing: 2px;
+    }
+
+    .navbar-brand:hover {
+        color: $navbar-color;
+    }
+
+    :hover {
+        color: $navbar-color;
+    }
+
+    .navbar-collapse, .navbar-form {
+        border-color: $navbar-backgound-color;
+    }
+}
+
+/**
+ * HOME SECTION STYLES
+ */
+#home-sec {
+    background: url(../img/1.jpg) no-repeat 50% 50%;
+    background-attachment: fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    width: 100%;
+    display: block;
+    height: auto;
+    padding-top: 190px;
+    padding-bottom: 200px;
+    color: #000;
+}
+
+.head-main {
+    font-size: 60px;
+    font-weight: 900;
+    color: #fff;
+    padding: 5px;
+    text-transform: uppercase;
+}
+
+.head-last {
+    font-size: 18px;
+    font-weight: 900;
+    padding: 35px 20px 60px 20px;
+}
+
+/**
+ * Contact STYLES
+ */
+.cnt {
+    width: 100%;
+    min-height: 350px;
+    border: 1px solid #e1e1e1;
+}
+
+/**
+ * FOOTER STYLES
+ */
+#footer {
+    background-color: #424242;
+    color: #fff;
+    padding: 20px 50px 20px 50px;
+    text-align: right;
+}
+
+/**
+ * MEDIA QUERIES
+ */
+@media all and (max-width:640px) and (min-width:405px) {
+    .head-main {
+        font-size: 50px;
+    }
+}
+
+@media all and (max-width:405px) and (min-width:200px) {
+    .head-main {
+        font-size: 35px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

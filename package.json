@@ -1,0 +1,11 @@
+{
+  "name": "mk_sass",
+  "version": "1.0.0",
+  "description": "將線上免費素材網站的css轉成sass。",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Mckey",
+  "license": "ISC"
+}
